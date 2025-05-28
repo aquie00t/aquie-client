@@ -10,4 +10,14 @@ export default defineConfig({
     globals: true,
     setupFiles: "./src/setupTests.js",
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: "./index.html",
+      },
+    },
+  },
+  server: {
+    historyApiFallback: true,
+  },
 });
